@@ -68,8 +68,9 @@ for units in UNITS:
     model.save(create_path(NAME+".h5", PATH = f"./models/{name_type}"))
     
     fig, ax = plt.subplots()
-    ax.plot(x,y)
-    ax.plot(x,model.predict(x))
+    ax.plot(x,model.predict(x),"--",color="r", label="RNA")
+    ax.plot(x,y,"-",color="b", label="Funcion")
     ax.set_title(NAME)
+    plt.legend()
     fig.savefig(create_path(NAME+".png",PATH = f"./img/{name_type}"))
 
