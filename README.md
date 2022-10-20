@@ -4,7 +4,7 @@ En todos los experimentos se utilizaron los valores epochs=500, loss=*mean absol
 ### Inciso a)
 Las imagenes resultantes de los experimentos se encuentran en *img/sin*, los modelos correspondientes en *models/sin* y los logs correspondientes para inicializar tensorboard en *logs/sin*.
 
-![TensorBoard_viz_sin](./img/sin/TensorBoard.PNG)
+![TensorBoard_viz_sin](./img/sin/TensorBoard.png)
 
 Los mejores 3 modelos fueron:
 - 30-Adam-tanh-tanh: 30 neuronas en cada capa, dos capas *tanh* y una *linear* de salida, optimizador Adam y error 0.00708.
